@@ -1,6 +1,6 @@
 # https://github.com/lehbob/lab11--PN---AH-.git
 # Partner 1: PN
-# Partner 2: AH
+# Partner 2: Aydan Haynes
 
 import unittest
 from calculator import *

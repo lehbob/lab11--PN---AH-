@@ -41,6 +41,29 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     # Partner 1 handles log_invalid_argument, hypotenuse, sqrt, etc.
     ##########################
+    def test_multiply(self):
+        self.assertEqual(mul(2,3), 6)
+        self.assertEqual(mul(0,1), 0)
+    
+    def test_divide(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 3)
+        self.assertEqual(div(2, 4), 2)
+
+    def test_log_invalid_argument(self):
+        with self.assertRaises(ValueError):
+            logarithm(-1, 10)
+            logarithm(-1, -1)
+            logarithm(3, 1)
+            logarithm(4, 0)
+    
+    def test_hypotenuse(self):
+        self.assertEqual(hypotenuse(3, 4), 5)
+        self.assertAlmostEqual(hypotenuse(2, 3) 3.6)
+
+    def test_sqrt(self):
+        self.assertAlmostEqual(square_root(2), 1.4)
+        self.assertEqual(square_root(4), 2)    
 
 # Do not touch this
 if __name__ == "__main__":

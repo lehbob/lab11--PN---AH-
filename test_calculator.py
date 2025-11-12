@@ -1,5 +1,5 @@
 # https://github.com/lehbob/lab11--PN---AH-.git
-# Partner 1: PN
+# Partner 1: Phuc Nguyen
 # Partner 2: Aydan Haynes
 
 import unittest

@@ -20,7 +20,7 @@ def div(a, b): # raise ZeroDivisionError if a == 0
         raise ZeroDivisionError
     return b / a 
 
-def log(a, b): loga(b)# use math library + raise ValueError
+def logarithm(a, b): # use math library + raise ValueError
     if a < 0 or b < 1:
         raise ValueError
     return math.log(b, a)
